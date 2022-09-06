@@ -1,0 +1,129 @@
+<html>
+
+<link rel="stylesheet" href="https://use.typekit.net/aqb1ids.css">
+
+
+
+<style>
+  	@font-face {
+	    font-family: 'neue-machina-collection';
+	    src: url(//cdn.shopify.com/s/files/1/2642/6578/t/28/assets/PPNeueMachina-Variable.woff?v=157129290440026371651652788616) format('truetype');
+		font-weight: 100 1200;
+		font-display: swap;
+		font-style: oblique;
+	}
+
+@font-face {
+    font-family: Adobe Caslon;
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("https://www.newyorker.com/verso/static/assets/fonts/TNYAdobeCaslonPro-Regular.woff2/verso/static/assets/fonts/Adobe Caslon-Italic.woff2") format("woff2"), url("/verso/static/assets/fonts/Adobe Caslon-Italic.woff") format("woff");
+}
+html { height: 100%; }
+
+body { 
+  background: #333; 
+  text-align: center;
+  min-height: 100%;
+  display: block;
+  justify-content: center;
+  align-items: left;
+  margin:0px;
+  margin-top:30px;
+}
+
+
+
+
+ @keyframes variableDemo {
+	    0% {
+	        font-variation-settings: "wght" 100, "ital" 0, "inkt" 100;
+        font-size:80px;
+        line-height: .75;
+	    }
+	    50% {
+	        font-variation-settings: "wght" 1000, "ital" 0, "inkt" 100;
+        font-size:200px;
+        line-height: 0;
+	    }
+	    100% {
+	        font-variation-settings: "wght" 3200, "ital" 0, "inkt" 1200;
+        font-size:500px;
+        line-height: .75;
+	    }
+    }
+
+.c-variable.is-inview {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.u-font {
+    font-family: 'neue-machina-collection', 'Neue Montreal', sans-serif;
+    font-variation-settings: "wght" 375, "inkt" 100;
+}
+
+.c-variable {
+    line-height: .4;
+    text-align: center;
+font-size:2.5rem;
+white-space:nowrap;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+  margin-bottom:60px;
+  color:white;
+}
+#megafire {
+  font-size:80px;
+      -webkit-animation: variableDemo 300s 1;
+    animation: variableDemo 300s 1;
+  animation-timing-function:  cubic-bezier(0.2,.23,0.8,2);
+  color:white;
+    z-index: 10000;
+  position:absolute;
+  left:50%;
+  transform:translate(-50%);
+  top:85px;
+ 
+}
+
+
+	
+    @media (max-width: 699px) {
+        .c-huge-type {
+            --line-height: 1.8;
+			height: 23em;
+        }
+	    .c-variable {
+	        font-size:3rem;
+	    }
+		.c-weight {
+			font-size: 2.5rem;
+		}
+    }
+
+h1 {
+  font-family: Adobe Caslon;
+  font-size:16px;
+  font-style: italic;
+  font-weight:400;
+  margin: 0px;
+  line-height: .6;
+}
+
+h2 {
+  margin:0px;
+}
+</style>
+
+<body>
+<h1 class="byline"> Annals of a Warming Planet</h1>
+<div class="c-variable u-font is-inview" data-scroll="" data-scroll-repeat=""><br>WHAT IT'S LIKE TO FIGHT A</div>
+<br>
+<div id="megafire" class="c-variajble u-font megafire is-inview" data-scroll="" data-scroll-repeat="">MEGAFIRE</div>
+<h1 class="caption"> Wildfires have grown more extreme. So have the risks of combatting them.</h1>
+<h2 class="author"> by M.R. O'Connor</h2>
+  
+</body>
+  
+</html>
